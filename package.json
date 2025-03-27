@@ -1,0 +1,45 @@
+{
+  "name": "mongodb-change-stream-manager",
+  "version": "1.0.0",
+  "description": "MongoDB change stream manager with audit logging capabilities",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest"
+  },
+  "keywords": [
+    "mongodb",
+    "change-stream",
+    "audit-log",
+    "mongoose"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "mongoose": "^7.0.0"
+  },
+  "peerDependencies": {
+    "mongodb": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^18.0.0",
+    "jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techamit1999/mongodb-change-stream-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/techamit1999/mongodb-change-stream-manager/issues"
+  },
+  "homepage": "https://github.com/techamit1999/mongodb-change-stream-manager#readme"
+}
