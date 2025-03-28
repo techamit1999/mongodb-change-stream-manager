@@ -123,12 +123,12 @@ export class ChangeStreamManager {
   }
 
     /**
-   * Determines if a field in a collection should be tracked
-   * @private
-   * @param collectionName - Name of the collection
-   * @param fieldName - Name of the field
-   * @returns boolean indicating if field should be tracked
-   */
+     * Determines if a field in a collection should be tracked
+     * @private
+     * @param collectionName - Name of the collection
+     * @param fieldName - Name of the field
+     * @returns boolean indicating if field should be tracked
+    */
     private shouldTrack(collectionName: string, fieldName: string): boolean {
         if (Object.keys(this.trackingConfig).length === 0) return true;
         if (!(collectionName in this.trackingConfig)) return false;
